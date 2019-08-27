@@ -46,8 +46,8 @@ RUN source "$SDKMAN_DIR/bin/sdkman-init.sh" \
     && sdk install gradle 5.6 \
     && sdk install maven 3.6.1
 
-ENV JAVA_HOME_8_X64 $SDKMAN_DIR/candidates/java/8.0.202-zulufx/
-ENV JAVA_HOME_11_X64 $SDKMAN_DIR/candidates/java/11.0.2-zulufx/
+ENV JAVA_HOME_8_X64 $SDKMAN_DIR/candidates/java/8.0.202-zulufx
+ENV JAVA_HOME_11_X64 $SDKMAN_DIR/candidates/java/11.0.2-zulufx
 
 WORKDIR /azp
 
