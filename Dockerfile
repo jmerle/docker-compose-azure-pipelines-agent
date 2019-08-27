@@ -40,8 +40,8 @@ RUN echo "sdkman_auto_answer=true" > $SDKMAN_DIR/etc/config \
     && echo "sdkman_insecure_ssl=false" >> $SDKMAN_DIR/etc/config
 
 RUN source "$SDKMAN_DIR/bin/sdkman-init.sh" \
-    && sdk install java 11.0.2-zulufx \
     && sdk install java 8.0.202-zulufx \
+    && sdk install java 11.0.2-zulufx \
     && sdk install kotlin 1.3.50 \
     && sdk install gradle 5.6 \
     && sdk install maven 3.6.1
