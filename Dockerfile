@@ -21,7 +21,8 @@ RUN apt-get update \
         zip \
         unzip \
         build-essential \
-        cmake
+        cmake \
+        libsdl2-dev
 
 RUN curl -sL https://deb.nodesource.com/setup_10.x | bash -
 RUN curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | apt-key add -
