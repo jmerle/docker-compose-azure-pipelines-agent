@@ -6,6 +6,4 @@ services:
       - AZP_URL=${AZP_URL}
       - AZP_TOKEN=${AZP_TOKEN}
       - AZP_AGENT_NAME=${AZP_AGENT_NAME}
-    volumes:
-      - /var/run/docker.sock:/var/run/docker.sock
     restart: unless-stopped
